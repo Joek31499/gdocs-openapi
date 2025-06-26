@@ -8,6 +8,10 @@ servers:
     description: Google Docs API
   - url: https://www.googleapis.com
     description: Google Drive API
+
+
+    Fix servers block to include valid URLs
+
 paths:
   /v1/documents/{documentId}:
     get:
@@ -142,3 +146,7 @@ security:
   - googleOAuth:
       - https://www.googleapis.com/auth/documents
       - https://www.googleapis.com/auth/drive
+
+
+
+     
