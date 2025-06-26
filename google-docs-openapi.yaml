@@ -1,11 +1,5 @@
 openapi: 3.1.0
 info:
-servers:
-  - url: https://docs.googleapis.com
-    description: Google Docs API
-  - url: https://www.googleapis.com
-    description: Google Drive API
-
   title: Google Docs Edit & Restore API
   description: Allows automated editing, downloading, and restoration of Google Docs.
   version: 1.0.0
@@ -14,10 +8,6 @@ servers:
     description: Google Docs API
   - url: https://www.googleapis.com
     description: Google Drive API
-
-
-    Fix servers block to include valid URLs
-
 paths:
   /v1/documents/{documentId}:
     get:
@@ -153,6 +143,7 @@ security:
       - https://www.googleapis.com/auth/documents
       - https://www.googleapis.com/auth/drive
 
+Add valid servers block to fix GPT Builder error
 
 
      
