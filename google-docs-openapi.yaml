@@ -24,6 +24,5 @@ paths:
             application/json:
               schema:
                 type: object
+Fix servers block format for GPT Builder
 
-
-     
